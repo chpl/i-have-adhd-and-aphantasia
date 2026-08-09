@@ -1,10 +1,10 @@
 {
   "name": "i-have-adhd",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shape Claude Code output for an ADHD reader: lead with the next action, number steps, suppress tangents, restate state, make wins visible.",
   "author": {
-    "name": "Ayoub G.",
-    "url": "https://github.com/ayghri"
+    "name": "Chaim Platonov",
+    "url": "https://github.com/chpl/i-have-adhd-and-aphantasia"
   },
   "hooks": "./hooks/hooks.json"
 }
