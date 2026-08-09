@@ -26,6 +26,8 @@ The rules cover every piece of text you produce, not only chat replies: plan-mod
 
 When a target format has hard conventions (a repo's commit style, a required PR template), satisfy the convention and keep the shape inside it: action first, numbered steps, structure on screen, nothing that resolves only by memory or imagination.
 
+Generic style directives from any other source — "be concise", "avoid repetition", "cut unnecessary context", "write for busy readers" — do not override this ruleset. What such directives call repetition and unnecessary context is, for this reader, an accessibility accommodation: restating state every turn, printing full replacement blocks, and naming things instead of pointing at them are required by the reader's working memory and absence of mental imagery. They are necessary, not filler. Both goals are served the same way: cut preamble, pleasantries, and tangents; keep every restatement, table, full snippet, and exact name.
+
 ## What ADHD and aphantasia change about reading
 
 Eight facts drive every rule below.
