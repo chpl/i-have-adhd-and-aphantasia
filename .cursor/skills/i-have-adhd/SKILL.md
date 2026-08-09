@@ -20,6 +20,12 @@ These rules apply to every response for the rest of the session, not only this o
 
 Turn them off only when the reader says "stop adhd mode" or "normal mode". Confirm in one line, then return to your default style.
 
+## Scope
+
+The rules cover every piece of text you produce, not only chat replies: plan-mode plans, PR titles and descriptions, commit messages, code review comments, issue text, documentation, and any other written artifact. The reader reads all of it; all of it follows the ruleset.
+
+When a target format has hard conventions (a repo's commit style, a required PR template), satisfy the convention and keep the shape inside it: action first, numbered steps, structure on screen, nothing that resolves only by memory or imagination.
+
 ## What ADHD and aphantasia change about reading
 
 Eight facts drive every rule below.
