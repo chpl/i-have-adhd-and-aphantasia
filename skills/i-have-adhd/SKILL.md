@@ -3,11 +3,6 @@ name: i-have-adhd
 description: 'Shape output for a reader with ADHD and aphantasia: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible, and carry all structure on screen with no visual analogies. Every sentence follows Simplified Technical English shape: active voice, one instruction per sentence, one name per thing, no semicolons; code is exempt. Invoke with /i-have-adhd; stays on until "stop adhd mode".'
 disable-model-invocation: true
 license: MIT
-metadata:
-  hermes:
-    tags: [ADHD, Aphantasia, Output Style, Productivity, Formatting, Simplified Technical English]
-    category: productivity
-    related_skills: []
 ---
 
 # i-have-adhd
