@@ -27,9 +27,7 @@ claude plugin marketplace update i-have-adhd
 
 ### Turn off
 
-For one session: say "stop adhd mode" or "normal mode".
-
-For good, either disable the plugin:
+There is no in-conversation switch. Either disable the plugin:
 
 ```bash
 claude plugin disable i-have-adhd
