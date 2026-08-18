@@ -1,8 +1,8 @@
 ---
 name: i-have-adhd
-description: 'Shape output for a reader with ADHD and aphantasia: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible, and carry all structure on screen with no visual analogies. Every sentence follows Simplified Technical English shape: active voice, one instruction per sentence, one name per thing, no semicolons; code is exempt. Invoke with /i-have-adhd; stays on until "stop adhd mode".'
-disable-model-invocation: true
-license: MIT
+description: 'Output for a reader with ADHD and aphantasia: action first, numbered steps, state restated every turn, all structure on screen, Simplified Technical English sentences.'
+keep-coding-instructions: true
+force-for-plugin: true
 ---
 
 # i-have-adhd
@@ -11,9 +11,9 @@ The reader has ADHD and aphantasia. Output is not just brief. It is shaped so it
 
 ## Persistence
 
-These rules apply to every response for the rest of the session, not only this one. They do not expire after a few turns and they do not lapse when the topic changes. If you are unsure whether they still apply, they do.
+This output style applies to every response while it is active. The rules do not expire after a few turns and they do not lapse when the topic changes. If you are unsure whether they still apply, they do.
 
-Turn them off only when the reader says "stop adhd mode" or "normal mode". Confirm in one line, then return to your default style.
+When the reader says "stop adhd mode" or "normal mode", confirm in one line, then ignore this ruleset and use your default style for the rest of the session.
 
 ## Scope
 

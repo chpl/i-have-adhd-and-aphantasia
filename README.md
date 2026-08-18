@@ -5,7 +5,7 @@
   <strong align="center">ADHD-friendly outputs. No ADHD diagnosis needed!</strong>
 </p>
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/chpl/i-have-adhd-and-aphantasia?style=flat" alt="License"></a>
 </p>
 
 ## Install
@@ -14,7 +14,7 @@
 
 ## What it does
 
-A skill for your coding assistant that stops it from burying the answer. Action first. Steps numbered. No "Hope this helps!"
+A Claude Code plugin that ships a custom output style and stops Claude from burying the answer. Action first. Steps numbered. No "Hope this helps!" The style applies automatically while the plugin is enabled.
 
 
 ## What changes
@@ -49,7 +49,7 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## The rules
 
-20 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
+20 rules. Full text in [output-styles/i-have-adhd.md](./output-styles/i-have-adhd.md).
 
 Response shape:
 
@@ -79,16 +79,16 @@ Sentence shape, adapted from [ASD-STE100](https://www.asd-ste100.org/) (Simplifi
 
 ## Tune it
 
-Fork, edit `skills/i-have-adhd/SKILL.md`, then swap your copy in:
+Fork, edit `output-styles/i-have-adhd.md`, then swap your copy in:
 
 ```bash
 claude plugin uninstall i-have-adhd            # drop the upstream copy first:
 claude plugin marketplace remove i-have-adhd   # fork and upstream share both names
-claude plugin marketplace add <your-username>/i-have-adhd
+claude plugin marketplace add <your-username>/i-have-adhd-and-aphantasia
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
-Restart Claude Code, then re-invoke `/i-have-adhd`.
+Restart Claude Code. The style applies automatically.
 
 ## Credits
 

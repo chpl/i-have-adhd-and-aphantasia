@@ -9,7 +9,7 @@ claude plugin marketplace add chpl/i-have-adhd-and-aphantasia
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
-Type `/i-have-adhd`.
+Restart Claude Code. The plugin ships the `i-have-adhd` output style with `force-for-plugin: true`, so the style applies to every session automatically — no command needed.
 
 ### Verify
 
@@ -17,33 +17,37 @@ Type `/i-have-adhd`.
 claude plugin list
 ```
 
+The style shows under **Output style** in `/config`.
+
 ### Update
 
 ```bash
 claude plugin marketplace update i-have-adhd
 ```
 
-### Uninstall
+### Turn off
+
+For one session: say "stop adhd mode" or "normal mode".
+
+For good, either disable the plugin:
+
+```bash
+claude plugin disable i-have-adhd
+```
+
+or uninstall it:
 
 ```bash
 claude plugin uninstall i-have-adhd
 claude plugin marketplace remove i-have-adhd
 ```
 
-Or keep it installed and turn it off: `claude plugin disable i-have-adhd`.
+### Migrating from the hook version (≤0.1.x)
 
-### Always-on (optional)
-
-A `SessionStart` hook loads the full ruleset at the start of every session, no `/i-have-adhd` needed:
+Versions up to 0.1.x injected the ruleset with a `SessionStart` hook gated on a flag file. The hook is gone; the flag does nothing now. Remove it:
 
 ```bash
-touch ~/.claude/.i-have-adhd-always
+rm -f ~/.claude/.i-have-adhd-always
 ```
 
-Back to on-demand:
-
-```bash
-rm ~/.claude/.i-have-adhd-always
-```
-
-The hook only fires when the flag file exists, so installing the plugin changes nothing by itself. Honors `$CLAUDE_CONFIG_DIR` if you've moved your config dir. "stop adhd mode" still turns it off for the current session.
+(Use `$CLAUDE_CONFIG_DIR/.i-have-adhd-always` if you moved your config dir.)
