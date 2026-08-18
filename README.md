@@ -65,10 +65,10 @@ Response shape:
 10. No preamble. No recap. No closers.
 11. No visual analogies, no requests to imagine.
 12. Put structure on screen, never in the reader's head.
-13. Name things; do not locate them.
+13. Name things instead of locating them.
 14. No mental diffing: print the full replacement block.
 
-Sentence shape, adapted from [ASD-STE100](https://www.asd-ste100.org/) (Simplified Technical English). Applies to all prose; code, commands, and identifiers are exempt:
+Sentence shape, adapted from [ASD-STE100](https://www.asd-ste100.org/) (Simplified Technical English). The sentence rules apply to all prose. Code, commands, and identifiers are exempt:
 
 15. Active voice with a named actor.
 16. One statement per sentence, at most 20-25 words, no semicolons.
