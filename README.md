@@ -59,7 +59,9 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## The rules
 
-10 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
+20 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
+
+Response shape:
 
 1. Lead with the next action.
 2. Number multi-step tasks.
@@ -71,6 +73,19 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 8. Matter-of-fact errors.
 9. Cap lists at 5 items.
 10. No preamble. No recap. No closers.
+11. No visual analogies, no requests to imagine.
+12. Put structure on screen, never in the reader's head.
+13. Name things; do not locate them.
+14. No mental diffing: print the full replacement block.
+
+Sentence shape, adapted from [ASD-STE100](https://www.asd-ste100.org/) (Simplified Technical English). Applies to all prose; code, commands, and identifiers are exempt:
+
+15. Active voice with a named actor.
+16. One statement per sentence, at most 20-25 words, no semicolons.
+17. One name per thing, one verb per action, no phrasal verbs.
+18. No dropped words: keep the subject, verb, and article.
+19. Keep hedges ("may have failed" is not "failed"). Simple tenses.
+20. One topic per paragraph, at most 6 sentences.
 
 ## Tune it
 
@@ -88,6 +103,8 @@ Restart Claude Code, then re-invoke `/i-have-adhd`.
 ## Credits
 
 Loosely based on *The Adult ADHD Tool Kit* by J. Russell Ramsay and Anthony L. Rostain. Adapted for how an LLM should respond, not how a human should organize their day.
+
+Sentence rules adapted from the structural rules of [ASD-STE100](https://www.asd-ste100.org/) (Simplified Technical English), by way of [danyuchn/asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill). The ~900-word STE dictionary is not reproduced.
 
 ## License
 
